@@ -5,6 +5,7 @@ environment:
 matrix:
   fast_finish: true
 init:
+- echo This is batch
 - ps: ls C:/Python*
 - 'SET PATH=%PYTHON%;%PYTHON%\Scripts;%PATH%'
 - 'python -c "import os, pprint; pprint.pprint(sorted(os.environ.items()))"'
