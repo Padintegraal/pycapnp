@@ -11,6 +11,7 @@ init:
 # Use python -m pip when upgrading pip to avoid WindowsError: Access is denied
 - python -m pip install pip --upgrade
 install:
+- echo This is batch
 - git submodule update --init
 - pip install wheel -rrequirements.txt
 build: true
